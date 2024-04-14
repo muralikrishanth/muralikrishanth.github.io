@@ -9,12 +9,12 @@ phone_number: +49 176 73935888
 address: Freiburg im Breisgau, Germany
 email: krishanthmurali1@gmail.com
 linkedin_username: krishanth-m
-github_username: github
+github_username: KrishanthMenon
 instagram_username: krishant_m_menon
-twitter_username: twitter
-facebook_username: facebook
-youtube_username: youtube
-blog_url: homepage-url
+# twitter_username: twitter
+# facebook_username: facebook
+youtube_username: finiteinfinite7238
+blog_url: https://x-finite.blogspot.com/
 
 exclude:
   - _posts/
