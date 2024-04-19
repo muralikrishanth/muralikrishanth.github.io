@@ -2,11 +2,10 @@ subject: Education
 listing-order: 1
 icon: "/assets/img/graduation-cap.svg"
 contents:
-  - title: Farvard University, PhD in Computer Science
+  - title: University of Freiburg - Albert Ludwigs Universität
     description:
-      - Design of a method to build a probabilistic generative model
-      - Development of model calibration algorithm for cross-domain few-shot learning
-    date: Mar. 2019 - Aug. 2023
+      - M.Sc. in Microsystems Engineering
+    date: Oct 2022 - Present
   - title: Stanfort University, MA in Computer Science
     description:
       - Development of deep learning algorithms for automatically tracking the facial expressions
