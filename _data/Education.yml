@@ -12,5 +12,7 @@ contents:
     # grade: "**GPA**: `4.1/4.3`"
     date:  Aug. 2018 - Jun. 2022
   - title:  St. Joseph's Boys' A.I. Higher Secondary School, India
+    description:
+        - Science (Physics & Chemistry), Maths & Computer Science
     # grade: "**GPA**: `3.9/4.3`"
     date: Jun. 2004 - May 2018
