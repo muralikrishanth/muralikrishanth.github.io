@@ -9,13 +9,37 @@ contents:
       - Staging the data by creating a Graphical User Interface.
     date: Nov. 2023 - Ongoing
   - title: Hahn-Schickard
-    role: Research Assistant
+    role: RESEARCH ASSISTANT
     description: 
       - Working in the field of Computer Vision and Image Processing.
       - Processing of images and detection of instances are being handled using Python.
     date: May 2023 - Ongoing
   - title: Capgemini Engineering
-    role: Trainee
+    role: TRAINEE
+    description: 
+      - An e-commerce application was built with the help of Java, Spring Boot, MySQL and React.js. Also, served as the Technical Leader for the project.
+    date: Jan. 2022 - Apr. 2022
+  - title: Frendy
+    role: PRODUCT MANAGEMENT & DEVELOPMENT
+    description: 
+      - Worked as a Project Manager, Researcher and Developer.
+      - A complete UI was designed and developed using Vue.js & Vuetify.
+    date: Jul. 2021 - Sep. 2021
+  - title: Cisco
+    role: CYBERSECURITY INTERNSHIP
+    description: 
+      - Understood the nuances and importance of Cybersecurity.
+      - Built a sustainable network for the campus using Cisco Packet Tracer.
+    date: Jun. 2021 - Jul. 2021
+  - title: Tutedude
+    role: TRAINER INTERNSHIP
+    description: 
+      - A complete Python course from basics to advanced was handled in this e-learning platform.
+      - Helped the students and professionals to gain confidence on the same.
+      - Course & Lectures provided by me. (tutedude.com/python)
+    date: Jan. 2022 - Apr. 2022
+    - title: Capgemini Engineering
+    role: TRAINEE
     description: 
       - An e-commerce application was built with the help of Java, Spring Boot, MySQL and React.js. Also, served as the Technical Leader for the project.
     date: Jan. 2022 - Apr. 2022
