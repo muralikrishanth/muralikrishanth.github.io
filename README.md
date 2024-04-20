@@ -1,4 +1,4 @@
-[![CI](https://img.shields.io/badge/Github%20Pages-passing-gold.svg?logo=github)](ci)
+<!-- <!-- [![CI](https://img.shields.io/badge/Github%20Pages-passing-gold.svg?logo=github)](ci)
 [![License: MIT](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/licenses/MIT)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.9-green.svg)](https://jekyllrb.com/)
 [![Jekyll](https://img.shields.io/badge/gem%20version-3.2.33-blue.svg)](gem)
@@ -17,7 +17,7 @@ Fork [this repository](https://github.com/byanko55/jekyll-professional-resume) o
 If you use as destination a repository named USERNAME.github.io, then your URL will be https://USERNAME.github.io/.
 
 ### Update Profile
-In `_config.yml`, you can modify personal info such as your *photo, phone number, email*, and other social accounts.
+In `_config.yml`, you can modify personal info such as your *photo, phone number, email*, and other social accounts. -->
 
 ```yml
 profile_img: assets/img/profile.webp
@@ -160,4 +160,4 @@ If you would like to report a bug or request a new feature, please open [an issu
 <br></br>
 
 ## License
-© 2024 *Yankos*. This theme is available as open source under the terms of the [MIT License](https://opensource.org/license/mit/).
+© 2024 *Yankos*. This theme is available as open source under the terms of the [MIT License](https://opensource.org/license/mit/). -->
