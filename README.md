@@ -19,7 +19,7 @@ If you use as destination a repository named USERNAME.github.io, then your URL w
 ### Update Profile
 In `_config.yml`, you can modify personal info such as your *photo, phone number, email*, and other social accounts. -->
 
-```yml
+<!-- ```yml
 profile_img: assets/img/profile.webp
 icon_img: assets/img/icon.webp
 
@@ -122,9 +122,9 @@ contents:
     image: "![](https://i.ibb.co/hX2wYLB/231321.webp)"
   ...
 
-```
+``` -->
 
-![example](https://i.ibb.co/tCNCyYr/231321.webp)
+<!-- ![example](https://i.ibb.co/tCNCyYr/231321.webp)
 
 ## Build from Gem package
 
@@ -160,4 +160,4 @@ If you would like to report a bug or request a new feature, please open [an issu
 <br></br>
 
 ## License
-© 2024 *Yankos*. This theme is available as open source under the terms of the [MIT License](https://opensource.org/license/mit/). -->
+© 2024 *Yankos*. This theme is available as open source under the terms of the [MIT License](https://opensource.org/license/mit/). --> 
