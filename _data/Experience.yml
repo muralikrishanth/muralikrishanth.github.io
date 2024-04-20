@@ -8,15 +8,14 @@ contents:
       - Working in Data Visualization for Geo-Spatial Network.
       - Staging the data by creating a Graphical User Interface.
     date: Nov. 2023 - Ongoing
-  - title: Amazone
-    role: Senior Software Engineer
+  - title: Hahn-Schickard
+    role: Research Assistant
     description: 
-      - Built a Java microservice, database schema to manage customer accounts
-      - Enhanced internal pipelines to query real-time data from client devices
-    date: Apr. 2016 - Dec. 2018
-  - title: Pacebook
-    role: Software Engineer Intern
+      - Working in the field of Computer Vision and Image Processing.
+      - Processing of images and detection of instances are being handled using Python.
+    date: May 2023 - Ongoing
+  - title: Capgemini Engineering
+    role: Trainee
     description: 
-      - Designed the dynamic website using React for data visualization
-      - Integrated '*Yolo*' to boost the accuracy of the object detection
-    date: Jul. 2013 - Sep. 2013
+      - An e-commerce application was built with the help of Java, Spring Boot, MySQL and React.js. Also, served as the Technical Leader for the project.
+    date: Jan. 2022 - Apr. 2022
