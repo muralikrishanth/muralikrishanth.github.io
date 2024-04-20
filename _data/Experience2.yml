@@ -1,0 +1,19 @@
+subject: Experiences
+listing-order: 3
+icon: "/assets/img/briefcase.svg"
+contents:
+  - title: CAI Mahindra
+    role: INTERNSHIP TRAINEE
+    description:
+      - Understood the basic vehicle functioning along with the technologies implemented in the automobile.
+    date: Dec. 2019 - Dec 2019
+  - title: Roots Industries 
+    role: TRAINEE
+    description: 
+      -  Obtained a lot of insights into multiple manufacturing processes.
+    date: Sep 2019 - Sep 2019
+  - title: Ambal Auto
+    role: INTERNSHIP TRAINEE
+    description: 
+      - Comprehended with the functioning of basic components in an automobile.
+    date: Jun. 2019 - Jun. 2019
