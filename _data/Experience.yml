@@ -2,12 +2,12 @@ subject: Experiences
 listing-order: 2
 icon: "/assets/img/briefcase.svg"
 contents:
-  - title: Nanosoft
-    role: Project Manager
+  - title: Fraunhofer EMI
+    role: RESEARCH ASSISTANT
     description:
-      - Led development of a new chatbot software utilizing large language model
-      - Co-designer of '*Kopilot*' and '*Gemmini*'
-    date: Jan. 2024 - Ongoing
+      - Working in Data Visualization for Geo-Spatial Network.
+      - Staging the data by creating a Graphical User Interface.
+    date: Nov. 2023 - Ongoing
   - title: Amazone
     role: Senior Software Engineer
     description: 
