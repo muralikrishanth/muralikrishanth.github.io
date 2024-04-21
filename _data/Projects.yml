@@ -2,20 +2,33 @@ subject: Projects
 listing-order: 4
 icon: "/assets/img/clipboard-list.svg"
 contents:
-  - title: "ChatPPT ([https://chat.opena1.com/](https://chat.openai.com/))"
+  - title: "User Interface Design and Integration"
     description: 
-      - Chatbot developed based on a large language model
-      - Designed Generative algorithm to generate novel human-like content
-      - "Technology Used: Rust, Typescript, Python, Ruby"
+      - Currently contributing to the design of user interfaces for Single Page Applications (SPAs), optimizing performance and functionality through MQTT protocol integration. 
+      - Actively collaborating cross-functionally to ensure seamless implementation, enhancing system responsiveness. 
+      - Committed to upholding industry standards, delivering intuitive solutions aligned with ongoing project goals and evolving client needs.
     image: "![](https://i.ibb.co/hX2wYLB/231321.webp)"
-  - title: "AW5-cli ([https://github.com/aw5/aw5-cli](https://github.com/aws/aws-cli))"
+  - title: "Computer vision and Image processing"
     description: 
-      - Universal Command Line Interface for Amazone Web Services
-      - Developed a scheme to facilitate users’ authentication without having to remember their credentials
-      - "Technology Used: Typescript, Python, Go"
+      - Employing Python for image analysis to detect and process instances within images, alongside developing a user-friendly interface. 
+      - Leveraging Python's robust libraries and frameworks for efficient image processing, ensuring accurate instance detection. 
+      - Integrating the image analysis functionality seamlessly into the user interface, enhancing usability and accessibility. 
+      - Actively contributing to the development of intuitive interfaces that streamline user interaction. 
+      - Continuously refining both image processing algorithms and user interface design to meet evolving project requirements and user expectations.
     image: "![](https://i.ibb.co/Ttb5Qn9/21321312.webp)"
-  - title: "PiTorch ([https://pitorch.org/](https://pytorch.org/))" 
+  - title: "Retrofitting" 
     description: 
-      - Machine learning library for applications such as computer vision and natural language processing
-      - "Technology Used: Python, Cuda, Objective-C++"
+      - Successfully completed the conversion of an autorickshaw from internal combustion (IC) engine to electric, through retrofitting. 
+      - Conducted a comprehensive survey to assess feasibility and requirements for the conversion, ensuring successful implementation. 
+      - Implemented necessary modifications to the autorickshaw's mechanics and electrical systems to facilitate the transition to electric power. 
+      - Achieved a seamless conversion process, optimizing performance and sustainability. 
+      - Demonstrated proficiency in retrofitting techniques and adherence to safety standards throughout the project.
+    image: "![](https://i.ibb.co/R9150c4/12421323.webp)"
+    - title: "Retrofitting" 
+    description: 
+      - Successfully completed the conversion of an autorickshaw from internal combustion (IC) engine to electric, through retrofitting. 
+      - Conducted a comprehensive survey to assess feasibility and requirements for the conversion, ensuring successful implementation. 
+      - Implemented necessary modifications to the autorickshaw's mechanics and electrical systems to facilitate the transition to electric power. 
+      - Achieved a seamless conversion process, optimizing performance and sustainability. 
+      - Demonstrated proficiency in retrofitting techniques and adherence to safety standards throughout the project.
     image: "![](https://i.ibb.co/R9150c4/12421323.webp)"
