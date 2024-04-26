@@ -7,7 +7,7 @@ contents:
       - Currently contributing to the design of user interfaces for Single Page Applications (SPAs), optimizing performance and functionality through MQTT protocol integration. 
       - Actively collaborating cross-functionally to ensure seamless implementation, enhancing system responsiveness. 
       - Committed to upholding industry standards, delivering intuitive solutions aligned with ongoing project goals and evolving client needs.
-    image: "![](https://i.ibb.co/vm3XKpx/ArcGIS.png)"
+    # image: "![](https://i.ibb.co/vm3XKpx/ArcGIS.png)"
   - title: "Computer vision and Image processing"
     description: 
       - Employing Python for image analysis to detect and process instances within images, alongside developing a user-friendly interface. 
@@ -15,7 +15,7 @@ contents:
       - Integrating the image analysis functionality seamlessly into the user interface, enhancing usability and accessibility. 
       - Actively contributing to the development of intuitive interfaces that streamline user interaction. 
       - Continuously refining both image processing algorithms and user interface design to meet evolving project requirements and user expectations.
-    image: "![](https://i.ibb.co/Ttb5Qn9/21321312.webp)"
+    # image: "![](https://i.ibb.co/Ttb5Qn9/21321312.webp)"
   - title: "Retrofitting" 
     description: 
       - Successfully completed the conversion of an autorickshaw from internal combustion (IC) engine to electric, through retrofitting. 
@@ -23,4 +23,28 @@ contents:
       - Implemented necessary modifications to the autorickshaw's mechanics and electrical systems to facilitate the transition to electric power. 
       - Achieved a seamless conversion process, optimizing performance and sustainability. 
       - Demonstrated proficiency in retrofitting techniques and adherence to safety standards throughout the project.
-    image: "![](https://i.ibb.co/R9150c4/12421323.webp)"
+    # image: "![](https://i.ibb.co/R9150c4/12421323.webp)"
+  - title: "Design and Analysis of Bumper with Alternate Materials" 
+    description: 
+      - After extensive research, ULTEM and ABS polymers have emerged as promising materials for automotive bumper fascia. 
+      - Rigorous testing validates their durability, impact resistance, and cost-effectiveness. 
+      - This breakthrough signifies significant progress in our quest for sustainable automotive solutions. 
+      - We remain committed to refining our approach and swiftly transitioning these materials into practical applications.
+  - title: "Efficiency-Enhancing User Interface Design for Application" 
+    description: 
+      - Constructed a sustainable campus network system by employing essential protocols via Packet Tracer. 
+      - This endeavor ensured reliable data transmission and seamless connectivity across campus. 
+      - Leveraging Packet Tracer's simulation capabilities, configurations were tested and optimized for efficiency. 
+      - The implemented protocols fostered a robust network infrastructure, facilitating effective communication and resource sharing. 
+      - This initiative lays a solid foundation for further network development and innovation within the campus environment.
+  - title: "Design and Fabrication of ATV (All-Terrain Vehicle)" 
+    description: 
+      - Effectively showcased the All-Terrain Vehicle (ATV) at SAE BAJA 2020, highlighting its innovative design and performance capabilities. 
+      - Through meticulous engineering and rigorous testing, our team delivered a vehicle optimized for rugged terrains and competitive racing environments. 
+      - The presentation at SAE BAJA 2020 underscored our commitment to excellence and our capacity to push the boundaries of off-road vehicle design.
+   - title: "Campus Cargo Companion: Wagon Attachment for Two-Wheelers" 
+    description: 
+      - The wagon was meticulously dimensioned and seamlessly attachable to a two-wheeler, facilitating efficient load transportation within the campus premises. 
+      - Its well-engineered design ensured optimal balance and stability, enhancing safety during transit. 
+      - This innovative solution addressed campus logistics needs effectively, enabling convenient transportation of goods across various locations. 
+      - The versatility and practicality of the wagon underscored its value as a reliable asset for campus operations.
