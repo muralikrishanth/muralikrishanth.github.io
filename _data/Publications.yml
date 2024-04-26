@@ -6,6 +6,7 @@ contents:
     ref: 
       - "[1] **M. Yankovich**, L. Hernández, M. Roveri, “[A symmetric encryption method with biometric authorization for constrained environments](https://scholar.google.com/),” *Cryptography*, vol. x, no. x, pp. xxx–xxx, 202x."
       - "[2] **M. Yankovich**, F. Arute, G. Persiano, G. Segev, “[Authorized public-key search on iiot applications](https://scholar.google.com/),” *IEEE Transactions on Information Forensics and Security*, pp. xxx–xxx, 202x."
+      - "[4] Abraham, J.D., Immanuel, A., **Krishanth, M.**, Nidarshan, S. and Arunsaco, S., 2023, October. "[Analysis of alternate material for bumpers using ULTEM and ABS](https://pubs.aip.org/aip/acp/article/2869/1/020016/2918791)," *American Institute of Physics Conference Series* (Vol. 2869, No. 1, p. 020016)"
   - title: Conference
     ref:
       - "[3] I. Lebedev, **M. Yankovich**, L. Wang, G. Segev, “[Post-training of deep bidirectional transformers for language understanding](https://scholar.google.com/),” *in Proc. 99th Annu. Meeting Assoc. Comput. Linguistics*, pp. xxx–xxx, 202x."
