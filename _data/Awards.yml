@@ -2,12 +2,15 @@ subject: Awards
 listing-order: 8
 icon: "/assets/img/trophy.svg"
 contents:
-  - title: IEEEE Fellow
-    description: Association for Natural Language Processing
-    date: Feb. 2024
-  - title: Gogle CodeJam
-    description: 3rd place in Gogle CodeJam
-    date: Jul. 2013
-  - title: Millennium Hackaton
-    description: won the best Inspirational Youth Awards
-    date: Oct. 2010
+  - title: Best Outgoing Student Award 2022
+    description: Best Outgoing Student of the Department of Automobile Engineering during B.Eng.
+    date: Jun. 2022
+  - title: Mahatma Gandhi Scholarship Award
+    description: Received the Scholarship award for 3 consecutive years.
+    date: Mar. 2019, Mar. 2021, Mar. 2022
+  - title: Galactic Peoblem Solver
+    description: Attended Space Apps Challenge orgnized by NASA in Kuala Lumpur in 20220.
+    date: Oct. 2010 Records
+  - title: Guinness World Record
+    description: -
+    date: -
