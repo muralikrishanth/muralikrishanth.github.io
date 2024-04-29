@@ -2,7 +2,7 @@ subject: Languages (●●●●●● shows A1 to C2)
 listing-order: 9
 icon: "/assets/img/globe.svg"
 contents:
-  (●●●●●● shows A1 to C2)
+  # (●●●●●● shows A1 to C2)
   - title: "English: <span style='color: goldenrod; margin: auto 8px; font-family: cursive;'>●●●●●○</span>"
   - title: "German: <span style='color: indianred; margin: auto 8px; font-family: cursive;'>●●●○○○</span>"
   - title: "French: <span style='color: indianred; margin: auto 8px; font-family: cursive;'>●○○○○○</span>" # ●●◐
