@@ -2,6 +2,14 @@ subject: Skills
 listing-order: 6
 icon: "/assets/img/screwdriver-wrench.svg"
 contents:
+  - title: General Competencies
+    description: "
+      ![devicon](https://static.vecteezy.com/system/resources/previews/002/062/644/original/product-design-concept-icon-vector.jpg)
+      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg)
+      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg)
+      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg)
+      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg)
+    "
   - title: Software Development Proficiency
     description: "
       ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg)
@@ -36,17 +44,11 @@ contents:
   - title: Other Proficiencies
     description: "
       ![devicon](https://upload.wikimedia.org/wikipedia/en/5/5a/Proteus_Design_Suite_Atom_Logo.png)
-      ![devicon](https://www.labcenter.com/images/logo.png)
       ![devicon](https://upload.wikimedia.org/wikipedia/commons/1/14/Ansys_logo_(2019).svg)
       ![devicon](https://img.icons8.com/color/48/solidworks.png)
       ![devicon](https://asset.brandfetch.io/idTweUBLHG/idon9mU_rY.png)
       ![devicon](https://img.icons8.com/color/48/autodesk-fusion-360.png)
       ![devicon](https://img.icons8.com/ios-filled/50/cisco-packet-tracer.png)
       ![devicon](https://www.logo.wine/a/logo/Keil_(company)/Keil_(company)-Logo.wine.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg)
+      ![devicon](https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg)
     "
