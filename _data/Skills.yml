@@ -2,14 +2,14 @@ subject: Skills
 listing-order: 6
 icon: "/assets/img/screwdriver-wrench.svg"
 contents:
-  - title: General Competencies
-    description: "
-      Product Management, 
-      Software Development, 
-      Product Design & Development, 
-      Product Analysis, 
-      Automotive
-    "
+  # - title: General Competencies
+  #   description: "
+  #     Product Management, 
+  #     Software Development, 
+  #     Product Design & Development, 
+  #     Product Analysis, 
+  #     Automotive
+  #   "
   - title: Software Development Proficiency
     description: "
       ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg)
