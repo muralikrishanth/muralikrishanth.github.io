@@ -11,76 +11,26 @@ contents:
   #     Automotive
   #   "
 
-  - title: "![devicon](https://upload.wikimedia.org/wikipedia/commons/e/eb/Siegel_der_Albert-Ludwigs-Universit%C3%A4t_Freiburg.svg) ![devicon](https://img.icons8.com/ios/50/classroom.png)"
+  - title: "![devicon](https://upload.wikimedia.org/wikipedia/de/f/f4/Albert-Ludwigs-Universit%C3%A4t_Freiburg_2009_logo.svg) ![devicon](https://img.icons8.com/ios/50/classroom.png)"
     description:
       - "Mentor"
       - "Intercultural Mentoring at the University of Freiburg"
       - "Fostering cross-cultural understanding and personal growth among students and committed to guiding the next generation toward success and inclusivity."
 
-  - title: Python Development
-    description: "
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spyder/spyder-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-original.svg)
-      ![devicon](https://scipy.org/images/logo.svg)
-      ![devicon](https://img.icons8.com/ios/50/soup-plate.png)
-      ![devicon](https://img.icons8.com/cotton/64/feather.png)
-    "
+  - title: "![devicon](https://upload.wikimedia.org/wikipedia/commons/e/ed/SAE_International_logo.svg) ![devicon](https://img.icons8.com/dotty/80/membership-card.png)"
+    description:
+      - "Student Executive Member (Southern Section, India) at Society of Automotive Engineers"
+      - "Volunteered in conducting and organizing events and workshops."
+      - "Presented Paper regarding the Reduction in the Violation of Traffic conducted by the SAE and Automotive Research Association of India."
 
-  - title: Front-End Development
-    description: "
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuetify/vuetify-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg)
-      ![devicon](https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png)
-    "
+  - title: "![devicon](https://cdn.worldvectorlogo.com/logos/security-industry-association-1.svg) ![devicon](https://img.icons8.com/ios/50/classroom.png)"
+    description:
+      - "Academic Member" 
+      - "An insight was shared with the students regarding the online threats and vulnerabilities happening in today's world." 
+      - "Also, stated the importance of cybersecurity which serves as an eye-opener and also relieves us from thinking about securing the data."
 
-  - title: Software Tools
-    description: "
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg)
-      ![devicon](https://img.icons8.com/color/48/code-blocks.png) 
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/atom/atom-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg)
-    "
-
-  - title: Other Proficiencies
-    description: "
-      ![devicon](https://upload.wikimedia.org/wikipedia/en/5/5a/Proteus_Design_Suite_Atom_Logo.png)
-      ![devicon](https://upload.wikimedia.org/wikipedia/commons/1/14/Ansys_logo_(2019).svg)
-      ![devicon](https://img.icons8.com/color/48/solidworks.png)
-      ![devicon](https://asset.brandfetch.io/idTweUBLHG/idon9mU_rY.png)
-      ![devicon](https://img.icons8.com/color/48/autodesk-fusion-360.png)
-      ![devicon](https://img.icons8.com/ios-filled/50/cisco-packet-tracer.png)
-      ![devicon](https://www.logo.wine/a/logo/Keil_(company)/Keil_(company)-Logo.wine.svg)
-      ![devicon](https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/labview/labview-original.svg)
-      ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg)
-    "
+  - title: "![devicon](https://upload.wikimedia.org/wikipedia/de/f/f4/Albert-Ludwigs-Universit%C3%A4t_Freiburg_2009_logo.svg) ![devicon](https://img.icons8.com/ios/50/classroom.png)"
+    description:
+      - "Mentor"
+      - "Intercultural Mentoring at the University of Freiburg"
+      - "Fostering cross-cultural understanding and personal growth among students and committed to guiding the next generation toward success and inclusivity."
