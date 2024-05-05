@@ -13,14 +13,8 @@ contents:
 
   - title: Software Proficiency
     description: 
-      - icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+      - icon: "![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg)"
       - text: "Python"
-      - icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
-      - text: "Git"
-      - icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
-      - text: "Java"
-      - icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
-      - text: "R"
 
   - title: Python Development
     description: "
