@@ -1,4 +1,4 @@
-subject: Volunteering
+subject: Contribution
 listing-order: 7
 icon: "/assets/img/volunteer.png"
 contents:
@@ -11,10 +11,11 @@ contents:
   #     Automotive
   #   "
 
-  - title: Software Proficiency
+  - title: Mentor
     description:
-      - "![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg)"
-      - "Python"
+      - "![devicon](https://upload.wikimedia.org/wikipedia/commons/e/eb/Siegel_der_Albert-Ludwigs-Universit%C3%A4t_Freiburg.svg)"
+      - "Intercultural Mentoring at the University of Freiburg"
+      - "Fostering cross-cultural understanding and personal growth among students and committed to guiding the next generation toward success and inclusivity."
 
   - title: Python Development
     description: "
