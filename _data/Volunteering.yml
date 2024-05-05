@@ -14,7 +14,7 @@ contents:
   - title: Software Proficiency
     description:
       - "Python"
-      - icon: "![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg)"
+      "![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg)"
 
   - title: Python Development
     description: "
