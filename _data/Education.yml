@@ -1,6 +1,7 @@
 subject: Education
 listing-order: 1
-icon: "/assets/img/graduation-cap.svg"
+# icon: "/assets/img/graduation-cap.svg"
+icon: "https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/external-graduation-hat-education-dreamstale-lineal-dreamstale.png"
 contents:
   - title: University of Freiburg, Germany
     description:
