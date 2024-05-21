@@ -21,26 +21,29 @@
 //     --theme4-dark: #3D725D;
 //     --font-dark: #202424;
 // }
+
 :root {
     --color-background: #f0f5f9;
-    --theme1-light: #e0f4ff; /* Lighter blue */
-    --theme1-medium: #a0d4f0; /* Lighter blue */
-    --theme1-dim: #6ab5e0; /* Lighter blue */
-    --theme1-dark: #388ecf; /* Lighter blue */
-    --theme2-light: #d0f1f8; /* Lighter blue */
-    --theme2-medium: #90d5e6; /* Lighter blue */
-    --theme2-dim: #5ab1d4; /* Lighter blue */
-    --theme2-dark: #2d8bbf; /* Lighter blue */
-    --theme3-light: #c8e8ef; /* Lighter blue */
-    --theme3-medium: #8ac9db; /* Lighter blue */
-    --theme3-dim: #4a98af; /* Lighter blue */
-    --theme3-dark: #1e6a89; /* Lighter blue */
-    --theme4-light: #b0dfe6; /* Lighter blue */
-    --theme4-medium: #6cb9c6; /* Lighter blue */
-    --theme4-dim: #3e8999; /* Lighter blue */
-    --theme4-dark: #205c6d; /* Lighter blue */
-    --font-dark: #001c2b; /* All fonts: Title and subtitles & the side menu fonts */
+    --theme1-light: #c5e2f2;
+    --theme1-medium: #8dbfd6;
+    --theme1-dim: #5a97b7;
+    --theme1-dark: #2d738f;
+    --theme2-light: #aed9ea;
+    --theme2-medium: #7bb4cf;
+    --theme2-dim: #4a8aa9;
+    --theme2-dark: #236681;
+    --theme3-light: #9acfd8;
+    --theme3-medium: #6ba2b9;
+    --theme3-dim: #417693;
+    --theme3-dark: #1e4f6e;
+    --theme4-light: #82bfc9;
+    --theme4-medium: #548da9;
+    --theme4-dim: #2e667f;
+    --theme4-dark: #144359;
+    --font-dark: #001c2b; // All fonts: Title and subtitles & the side menu fonts
 }
+
+
 
 html, body {
     margin:0;
