@@ -3,17 +3,23 @@ listing-order: 2
 icon: "/assets/img/briefcase.svg"
 contents:
   - title: Fraunhofer EMI
+    role: MASTER THESIS
+    description:
+      - AI-driven parametrization of a material model for C45 Steel for a wide range of strain rates.
+      - Automation of the complete process combined with the optimization of Johnson-Cook model using the method Differential Evolution.
+    date: Nov. 2024 - Ongoing
+  - title: Fraunhofer EMI
     role: RESEARCH ASSISTANT
     description:
       - Working in Data Visualization for Geo-Spatial Network.
       - Staging the data by creating a Graphical User Interface.
-    date: Nov. 2023 - Ongoing
+    date: Nov. 2023 - Nov. 2024
   - title: Hahn-Schickard
     role: RESEARCH ASSISTANT
     description: 
       - Working in the field of Computer Vision and Image Processing.
       - Processing of images and detection of instances are being handled using Python.
-    date: May 2023 - Ongoing
+    date: May 2023 - Oct. 2024
   - title: Capgemini Engineering
     role: TRAINEE
     description: 
