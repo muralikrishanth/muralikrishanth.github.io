@@ -7,7 +7,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo.png" />
   <link rel="shortcut icon" href="logo.png" />
-    
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -30,13 +30,47 @@
   </div>
 </div> -->
 
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileNav()"></div>
+<div class="mobile-nav-drawer" id="mobileNavDrawer">
+  <div class="mobile-nav-header">
+    <span class="mobile-nav-title">EXPLORER</span>
+    <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  </div>
+  <div class="mobile-nav-body">
+    <!-- Nav sections as simple tappable links -->
+    <div class="mobile-nav-section">Files</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('about.py')">🐍 about.py</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('experience.json')">{} experience.json</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('skills.ts')">TS skills.ts</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('projects.jsx')">⚛ projects.jsx</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('education.md')"># education.md</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('contact.sh')">$ contact.sh</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('terminal')">&gt;_ terminal</div>
+    <div class="mobile-nav-section">More</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('publications.bib')">📄 publications.bib</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('certifications.yml')">✓ certifications.yml</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('honors.toml')">🏆 honors.toml</div>
+    <div class="mobile-nav-item" onclick="mobileOpen('volunteering.md')"># volunteering.md</div>
+  </div>
+</div>
+
 <!-- TITLE BAR -->
 <div class="titlebar">
-  <div class="titlebar-left">
-    <svg class="vscode-logo" width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <path d="M74.5 5.5L38.2 38.4 16.6 22.1 5.5 27.8v44.4l11.1 5.7 21.6-16.3 36.3 32.9L94.5 88V12L74.5 5.5zm0 67.1L48.2 50l26.3-22.6v45.2z" fill="currentColor"/>
-    </svg>
-  </div>
+<div class="titlebar-left">
+<button class="mobile-nav-btn" id="mobileNavBtn" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+  <!-- Hamburger: mobile only -->
+  <svg class="hamburger-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="3" y1="6"  x2="21" y2="6"  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <!-- VSCode logo: desktop only -->
+  <svg class="vscode-logo" width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M74.5 5.5L38.2 38.4 16.6 22.1 5.5 27.8v44.4l11.1 5.7 21.6-16.3 36.3 32.9L94.5 88V12L74.5 5.5zm0 67.1L48.2 50l26.3-22.6v45.2z" fill="currentColor"/>
+  </svg>
+</button>
+</div>
   <div class="titlebar-title">Krishanth Murali - Portfolio</div>
   <div class="titlebar-actions">
     <a href="https://linkedin.com/in/krishanth-murali" target="_blank" class="titlebar-connect">Connect</a>
@@ -925,7 +959,7 @@
               <span class="cmd-key">about.py</span>
             </div>
             <div class="welcome-cmd" onclick="switchTab('experience.json')">
-              <span class="cmd-icon">{ }</span>
+              <span class="cmd-icon">{}</span>
               <span class="cmd-label">Open Experience</span>
               <span class="cmd-key">experience.json</span>
             </div>

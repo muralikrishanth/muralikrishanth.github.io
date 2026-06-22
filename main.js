@@ -23,7 +23,7 @@ const fileLanguageMap = {
 
 const fileIconMap = {
   'about.py':           { icon: '🐍', cls: 'py' },
-  'experience.json':    { icon: '{ }', cls: 'json' },
+  'experience.json':    { icon: '{}', cls: 'json' },
   'skills.ts':          { icon: 'TS', cls: 'ts' },
   'projects.jsx':       { icon: '⚛', cls: 'jsx' },
   'education.md':       { icon: '#', cls: 'md' },
@@ -36,6 +36,11 @@ const fileIconMap = {
 };
 
 function switchTab(filename) {
+  // On mobile: tapping the already-active tab closes it
+  if (window.innerWidth <= 768 && activeTab === filename) {
+    closeTab({ stopPropagation: () => {} }, filename);
+    return;
+  }
   if (!openTabs.includes(filename)) {
     openTabs.push(filename);
     addTab(filename);
@@ -119,7 +124,54 @@ function showWelcome() {
   if (statusFile) statusFile.textContent = 'Welcome';
 }
 
-// ── ACCOUNTS POPOVER ──────────────────────────────────────────
+// ── MOBILE NAV DRAWER ─────────────────────────────────────────
+
+function toggleMobileNav() {
+  const drawer = document.getElementById('mobileNavDrawer');
+  const overlay = document.getElementById('mobileNavOverlay');
+  if (!drawer || !overlay) return;
+  const isOpen = drawer.classList.contains('open');
+  if (isOpen) {
+    closeMobileNav();
+  } else {
+    // Sync active highlight before opening
+    syncMobileNavActive();
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+  }
+}
+
+function closeMobileNav() {
+  const drawer = document.getElementById('mobileNavDrawer');
+  const overlay = document.getElementById('mobileNavOverlay');
+  if (drawer) drawer.classList.remove('open');
+  if (overlay) overlay.classList.remove('open');
+}
+
+function mobileOpen(filename) {
+  // If already open and active, close it; otherwise open it
+  if (activeTab === filename) {
+    closeTab({ stopPropagation: () => {} }, filename);
+  } else {
+    switchTab(filename);
+  }
+  closeMobileNav();
+}
+
+function syncMobileNavActive() {
+  document.querySelectorAll('.mobile-nav-item').forEach(item => {
+    const onclick = item.getAttribute('onclick') || '';
+    const match = onclick.match(/mobileOpen\('(.+?)'\)/);
+    if (match) {
+      item.classList.toggle('active-file', match[1] === activeTab);
+    }
+  });
+}
+
+// Close mobile nav on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeMobileNav();
+});
 
 function toggleAccounts(e) {
   if (e) e.stopPropagation();

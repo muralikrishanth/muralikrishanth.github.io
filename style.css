@@ -524,13 +524,14 @@ html, body {
 }
 
 .code-panel {
-  display: none;        /* hidden by default */
+  display: none;
   flex-direction: row;
   align-items: stretch;
   width: 100%;
-  height: 100%;         /* fill the editor-content */
+  height: 100%;
   overflow: auto;
-  position: absolute;   /* stack panels on top of each other */
+  overflow-x: hidden;
+  position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
 }
 .code-panel.active {
@@ -583,7 +584,10 @@ pre.code {
   line-height: 1.65;
   white-space: pre-wrap;
   word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   tab-size: 2;
+  max-width: 100%;
 }
 
 /* ── SYNTAX HIGHLIGHTING ────────────────────────────────────── */
@@ -1006,14 +1010,203 @@ pre.code {
   :root { --sidebar-width: 0px; }
   .sidebar { display: none; }
   .activity-bar { display: none; }
-  .editor-layout { flex-direction: column; }
-  pre.code { font-size: 12px; }
+
+  /* Full height layout on mobile */
+  html, body { overflow: hidden; height: 100%; }
+  .editor-layout {
+    height: calc(100vh - var(--title-height));
+    flex-direction: row; /* keep row so editor-area fills width */
+  }
+  .editor-area { flex: 1; min-width: 0; overflow: hidden; }
+
+  /* Tab bar: smaller, scrollable, no close buttons */
+  .tab { min-width: 80px; max-width: 120px; font-size: 11px; padding: 0 8px; }
+  .tab-close { display: none; }
+
+  /* Code panels: take full height, scroll internally */
+  .editor-content {
+    height: calc(100vh - var(--title-height) - var(--tab-height) - var(--status-height));
+    overflow: hidden;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  .code-panel {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* Code area */
+  pre.code { font-size: 11px; white-space: pre-wrap; word-break: break-all; overflow-wrap: anywhere; max-width: 100%; overflow-x: hidden; }
+  .code-area { padding: 12px 10px 40px; min-width: 0; max-width: 100%; overflow-x: hidden; }
+  .line-numbers { display: none; }
+
+  /* Grids: single column */
   .skill-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .contact-links { grid-template-columns: 1fr; }
+
+  /* Hero buttons stack */
   .hero-cta { flex-direction: column; }
-  .accounts-popover { left: 12px; right: 12px; width: auto; bottom: calc(var(--status-height) + 12px); }
+
+  /* Status bar — clean, no overflow */
+  .status-bar {
+    font-size: 10px;
+    padding: 0 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .status-left { gap: 5px; }
+  .status-right { gap: 5px; }
+  .status-left .status-item:not(.status-git) { display: none; }
+  .status-right .status-item:not(.status-live):not(#statusFile) { display: none; }
+
+  /* Terminal */
+  .terminal-body { padding: 10px 12px; font-size: 11.5px; }
+  .term-prompt { font-size: 10.5px; }
+  .term-output { padding-left: 10px; font-size: 11px; }
+  .term-line { flex-wrap: wrap; word-break: break-all; }
+
+  /* Welcome panel */
+  .welcome-content { padding: 24px 16px; }
+  .welcome-name { font-size: 18px; }
+
+  /* Accounts popover */
+  .accounts-popover {
+    left: 12px; right: 12px;
+    width: auto;
+    bottom: calc(var(--status-height) + 12px);
+  }
 }
+
+/* ── MOBILE NAV BUTTON (in titlebar) ───────────────────────── */
+.mobile-nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  color: #007acc;
+  border-radius: 4px;
+  -webkit-app-region: no-drag;
+  transition: background 0.15s;
+}
+.mobile-nav-btn:hover { background: var(--bg-hover); }
+
+/* On desktop the button still works but looks like the old logo */
+@media (min-width: 769px) {
+  .mobile-nav-btn { cursor: default; }
+  .mobile-nav-overlay,
+  .mobile-nav-drawer { display: none !important; }
+}
+
+/* ── MOBILE NAV DRAWER ──────────────────────────────────────── */
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 500;
+}
+.mobile-nav-overlay.open { display: block; }
+
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: 78vw;
+  max-width: 300px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  z-index: 600;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-nav-drawer.open { transform: translateX(0); }
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-tertiary);
+  flex-shrink: 0;
+}
+.mobile-nav-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  font-family: var(--font-ui);
+}
+.mobile-nav-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.15s, background 0.15s;
+}
+.mobile-nav-close:hover,
+.mobile-nav-close:active { color: var(--text-white); background: var(--bg-hover); }
+
+.mobile-nav-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+.mobile-nav-section {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding: 12px 14px 4px;
+}
+.mobile-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 11px 18px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  border-radius: 3px;
+  margin: 1px 6px;
+  -webkit-tap-highlight-color: transparent;
+}
+.mobile-nav-item:hover,
+.mobile-nav-item:active {
+  background: var(--bg-active);
+  color: var(--text-white);
+}
+.mobile-nav-item.active-file {
+  background: var(--bg-active);
+  color: var(--text-white);
+}
+/* reuse file-color icon colors inside drawer */
+.mobile-nav-icon { font-size: 11px; font-weight: 700; width: 18px; text-align: center; flex-shrink: 0; }
+.mobile-nav-icon.py   { color: #3b89cc; }
+.mobile-nav-icon.json { color: #ffcb6b; font-size: 9px; }
+.mobile-nav-icon.ts   { color: #007acc; }
+.mobile-nav-icon.jsx  { color: #61dafb; }
+.mobile-nav-icon.md   { color: #a0c4ff; }
+.mobile-nav-icon.sh   { color: #4ec9b0; }
+.mobile-nav-icon.term { color: #ce9178; }
+.mobile-nav-icon.bib  { color: #dcdcaa; }
+.mobile-nav-icon.yml  { color: #4ec9b0; }
+.mobile-nav-icon.toml { color: #ce9178; }
 
 /* ── SELECTION ──────────────────────────────────────────────── */
 ::selection { background: rgba(38,79,120,0.7); color: #fff; }
@@ -1098,4 +1291,14 @@ pre.code {
 .codicon {
   font-size: 14px;
   vertical-align: middle;
+}
+/* second responsive block removed — all rules consolidated above */
+/* Desktop: show logo, hide hamburger */
+.hamburger-icon { display: none; }
+.vscode-logo    { display: block; }
+
+/* Mobile: show hamburger, hide logo */
+@media (max-width: 768px) {
+  .hamburger-icon { display: block; color: var(--text-secondary); }
+  .vscode-logo    { display: none; }
 }
