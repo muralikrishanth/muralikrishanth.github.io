@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishanth Murali — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vscode-icons-svg@latest/dist/vscode-icons-svg.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vscode/codicons/dist/codicon.css">
+</head>
+<body>
+
+<!-- TITLE BAR
+<div class="titlebar">
+  <div class="titlebar-dots">
+    <span class="dot dot-red"></span>
+    <span class="dot dot-yellow"></span>
+    <span class="dot dot-green"></span>
+  </div>
+  <div class="titlebar-title">Krishanth Murali — Portfolio (Version - VS Code)</div>
+  <div class="titlebar-actions">
+    <span class="titlebar-icon">⚡</span>
+  </div>
+</div> -->
+
+<!-- TITLE BAR -->
+<div class="titlebar">
+  <div class="titlebar-left">
+    <svg class="vscode-logo" width="18" height="18" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M74.5 5.5L38.2 38.4 16.6 22.1 5.5 27.8v44.4l11.1 5.7 21.6-16.3 36.3 32.9L94.5 88V12L74.5 5.5zm0 67.1L48.2 50l26.3-22.6v45.2z" fill="currentColor"/>
+    </svg>
+  </div>
+  <div class="titlebar-title">Krishanth Murali - Portfolio</div>
+  <div class="titlebar-actions">
+    <a href="https://linkedin.com/in/krishanth-murali" target="_blank" class="titlebar-connect">Connect</a>
+    <span class="titlebar-icon">⚡</span>
+  </div>
+</div>
+
+<!-- MAIN EDITOR LAYOUT -->
+<div class="editor-layout">
+
+  <!-- ACTIVITY BAR -->
+  <div class="activity-bar">
+    <!-- <div class="activity-icons-top">
+      <div class="activity-icon active" data-tooltip="Explorer" onclick="setSidebarView('explorer')" data-view="explorer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 3h8v8H3V3zm0 10h8v8H3v-8zm10-10h8v8h-8V3zm0 10h8v8h-8v-8z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </div>
+      <div class="activity-icon" data-tooltip="Search" onclick="setSidebarView('search')" data-view="search">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="activity-icon" data-tooltip="Side Projects" onclick="setSidebarView('scm')" data-view="scm">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 9v6M9 6h5.5a3.5 3.5 0 0 1 0 7H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="activity-icon" data-tooltip="Terminal" onclick="openTerminalIcon()" data-view="terminal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="4,17 10,11 4,5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="19" x2="20" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+    </div> -->
+    <div class="activity-icons-top">
+  <div class="activity-icon active" data-tooltip="Explorer" onclick="setSidebarView('explorer')" data-view="explorer">
+    <!-- VSCode Explorer: two overlapping pages -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      <polyline points="13 2 13 9 20 9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+  </div>
+  <div class="activity-icon" data-tooltip="Search" onclick="setSidebarView('search')" data-view="search">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+  </div>
+  <div class="activity-icon" data-tooltip="Source Control" onclick="setSidebarView('scm')" data-view="scm">
+    <!-- VSCode Source Control: branch fork icon -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="6" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="6" cy="19" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="18" cy="5" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M6 7.5v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M18 7.5c0 3.5-2 5.5-5.5 6L6 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+  <div class="activity-icon" data-tooltip="Extensions" onclick="setSidebarView('extensions')" data-view="extensions">
+    <!-- VSCode Extensions: puzzle piece icon -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4a2 2 0 0 0-2 2v3.8h1.5a2.5 2.5 0 0 1 0 5H2V20a2 2 0 0 0 2 2h3.8v-1.5a2.5 2.5 0 0 1 5 0V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+  </div>
+</div>
+    <div class="activity-icons-bottom">
+      <div class="activity-icon account-icon" data-tooltip="Accounts" onclick="toggleAccounts(event)" id="accountsTrigger">
+        <div class="avatar-circle">
+          <img src="photo.png" alt="Krishanth Murali" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCOUNTS POPOVER (Profile) -->
+  <div class="accounts-popover" id="accountsPopover">
+    <div class="accounts-header">
+      <div class="avatar-circle large">
+        <img src="photo.png" alt="Krishanth Murali" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+      </div>
+      <div class="accounts-id">
+        <div class="accounts-name">Krishanth Murali</div>
+        <div class="accounts-title">Researcher &amp; Developer</div>
+      </div>
+    </div>
+    <div class="accounts-list">
+      <a href="https://linkedin.com/in/krishanthmurali" target="_blank" class="account-row">
+        <span class="account-icon">🔗</span><span>LinkedIn</span><span class="account-handle">krishanth-murali</span>
+      </a>
+      <a href="https://github.com/muralikrishanth" target="_blank" class="account-row">
+        <span class="account-icon">🐙</span><span>GitHub</span><span class="account-handle">muralikrishanth</span>
+      </a>
+      <a href="https://huggingface.co/muralikrishanth" target="_blank" class="account-row">
+        <span class="account-icon">🤗</span><span>Hugging Face</span><span class="account-handle">muralikrishanth</span>
+      </a>
+      <a href="mailto:krishanthmurali1@gmail.com" class="account-row">
+        <span class="account-icon">📧</span><span>Email</span><span class="account-handle">krishanthmurali1@gmail.com</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+
+    <!-- EXPLORER VIEW -->
+    <div class="sidebar-view active" id="view-explorer">
+      <div class="sidebar-header">EXPLORER</div>
+      <div class="sidebar-section">
+        <div class="sidebar-folder open" onclick="toggleFolder(this)">
+          <span class="folder-icon">▾</span>
+          <span class="folder-icon-img">📁</span>
+          <span>krishanth-murali</span>
+        </div>
+        <div class="sidebar-files">
+          <div class="file-item active" onclick="switchTab('about.py')" data-file="about.py">
+            <span class="file-color py">🐍</span> about.py
+          </div>
+          <div class="file-item" onclick="switchTab('experience.json')" data-file="experience.json">
+            <span class="file-color json">{}</span> experience.json
+          </div>
+          <div class="file-item" onclick="switchTab('skills.ts')" data-file="skills.ts">
+            <span class="file-color ts">TS</span> skills.ts
+          </div>
+          <div class="file-item" onclick="switchTab('projects.jsx')" data-file="projects.jsx">
+            <span class="file-color jsx">⚛</span> projects.jsx
+          </div>
+          <div class="file-item" onclick="switchTab('education.md')" data-file="education.md">
+            <span class="file-color md">#</span> education.md
+          </div>
+          <div class="file-item" onclick="switchTab('publications.bib')" data-file="publications.bib">
+            <span class="file-color bib">📄</span> publications.bib
+          </div>
+          <div class="file-item" onclick="switchTab('certifications.yml')" data-file="certifications.yml">
+            <span class="file-color yml">✓</span> certifications.yml
+          </div>
+          <div class="file-item" onclick="switchTab('honors.toml')" data-file="honors.toml">
+            <span class="file-color toml">🏆</span> honors.toml
+          </div>
+          <div class="file-item" onclick="switchTab('volunteering.md')" data-file="volunteering.md">
+            <span class="file-color md">#</span> volunteering.md
+          </div>
+          <div class="file-item" onclick="switchTab('contact.sh')" data-file="contact.sh">
+            <span class="file-color sh">$</span> contact.sh
+          </div>
+          <div class="file-item" onclick="switchTab('terminal')" data-file="terminal">
+            <span class="file-color term">&gt;_</span> terminal
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-section">
+  <div class="sidebar-folder open" onclick="toggleFolder(this)">
+    <span class="folder-icon">▾</span>
+    <span>TERMINAL</span>
+  </div>
+  <div class="sidebar-files" id="sidebarTerminal">
+    <div class="file-item" onclick="switchTab('terminal')" data-file="terminal">
+      <span class="file-color term">&gt;_</span> terminal
+    </div>
+  </div>
+</div>
+    </div>
+
+    <!-- SEARCH VIEW -->
+    <div class="sidebar-view" id="view-search">
+      <div class="sidebar-header">SEARCH</div>
+      <div class="search-box-wrap">
+        <div class="search-input-row">
+          <span class="search-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.8"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search sections,…" oninput="runSearch(this.value)" autocomplete="off" />
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+
+    <!-- SOURCE CONTROL VIEW -->
+    <div class="sidebar-view" id="view-scm">
+      <div class="sidebar-header">EXTENSION PROJECTS</div>
+      <div class="scm-summary">
+        <span class="scm-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 9v6M9 6h5.5a3.5 3.5 0 0 1 0 7H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>
+        <span>extension-projects</span>
+        <span class="scm-count" id="scmCount">0</span>
+      </div>
+      <div class="scm-list" id="scmList"></div>
+    </div>
+
+    <!-- EXTENSIONS VIEW -->
+    <div class="sidebar-view" id="view-extensions">
+      <div class="sidebar-header">EXTENSIONS</div>
+
+      <div class="ext-section-label">PERSONAL</div>
+      <div class="ext-item" onclick="window.open('https://www.youtube.com/@finiteinfinite7238','_blank')">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="5" width="20" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><polygon points="10,9 16,12 10,15" fill="currentColor"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Finite Infinite</div>
+          <div class="ext-desc">YouTube Channel — Tech, ideas &amp; curiosity</div>
+        </div>
+        <span class="ext-link-icon">↗</span>
+      </div>
+
+      <div class="ext-section-label">HOBBIES</div>
+      <div class="ext-item">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Music</div>
+          <div class="ext-desc">Exploring music production &amp; listening</div>
+        </div>
+      </div>
+      <div class="ext-item">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Content Creation</div>
+          <div class="ext-desc">Filming, editing &amp; storytelling through video</div>
+        </div>
+      </div>
+      <div class="ext-item">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Photography</div>
+          <div class="ext-desc">Capturing moments, architecture &amp; travel</div>
+        </div>
+      </div>
+      <div class="ext-item">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 17l4-8 4 6 3-4 4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="5" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Travelling</div>
+          <div class="ext-desc">Exploring cities, cultures &amp; landscapes</div>
+        </div>
+      </div>
+
+      <div class="ext-section-label">VENTURES — SYMPLY GLOBAL</div>
+      <div class="ext-item" onclick="window.open('https://symply-global.netlify.app/','_blank')">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Symply Global</div>
+          <div class="ext-desc">Founder — company in stealth mode</div>
+        </div>
+        <span class="ext-link-icon">↗</span>
+      </div>
+      <div class="ext-item ext-sub">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21.7C17.3 17 22 13 22 9a10 10 0 0 0-20 0c0 4 4.7 8 10 12.7z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Symply Care</div>
+          <div class="ext-desc">App — coming soon</div>
+        </div>
+      </div>
+      <div class="ext-item ext-sub">
+        <svg class="ext-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="11" width="14" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M13 16h.01M17 16h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="ext-info">
+          <div class="ext-name">Symply Go</div>
+          <div class="ext-desc">App — coming soon</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- EDITOR AREA -->
+  <div class="editor-area">
+
+    <!-- TAB BAR -->
+    <div class="tab-bar" id="tabBar">
+      <div class="tab active" data-tab="about.py" onclick="switchTab('about.py')">
+        <span class="tab-icon py">🐍</span>about.py
+        <span class="tab-close" onclick="closeTab(event, 'about.py')">×</span>
+      </div>
+    </div>
+
+    <!-- EDITOR CONTENT -->
+    <div class="editor-content" id="editorContent">
+
+      <!-- ABOUT.PY -->
+      <div class="code-panel active" id="panel-about.py">
+        <div class="line-numbers" id="ln-about"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">about.py</span></div>
+          <pre class="code"><span class="comment"># ============================================================</span>
+<span class="comment"># about.py  —  Who is Krishanth Murali?</span>
+<span class="comment"># ============================================================</span>
+
+<span class="keyword">from</span> <span class="module">passion</span> <span class="keyword">import</span> <span class="fn">AI, Algorithms, Engineering</span>
+<span class="keyword">from</span> <span class="module">location</span> <span class="keyword">import</span> <span class="fn">Freiburg, Germany</span>
+
+<span class="keyword">class</span> <span class="classname">KrishanthMurali</span><span class="punct">:</span>
+    <span class="string">"""
+    Researcher & Engineer obsessed with making complex systems
+    work smarter. Currently working on Digitalization,
+    AI, and software — one algorithm at a time.
+    """</span>
+
+    <span class="keyword">def</span> <span class="fn">__init__</span><span class="punct">(</span><span class="param">self</span><span class="punct">):</span>
+        <span class="param">self</span><span class="punct">.</span><span class="attr">name</span>        <span class="op">=</span> <span class="string">"Krishanth Murali"</span>
+        <span class="param">self</span><span class="punct">.</span><span class="attr">title</span>       <span class="op">=</span> <span class="string">"Researcher & Developer | Digitalization & Algorithm Development"</span>
+        <span class="param">self</span><span class="punct">.</span><span class="attr">focus</span>       <span class="op">=</span> <span class="punct">[</span>
+            <span class="string">"Digitalization"</span><span class="punct">,</span>
+            <span class="string">"AI & Machine Learning"</span><span class="punct">,</span>
+            <span class="string">"Algorithm Development"</span><span class="punct">,</span>
+            <span class="string">"Computer Vision"</span><span class="punct">,</span>
+            <span class="string">"Full-Stack Development"</span><span class="punct">,</span>
+        <span class="punct">]</span>
+        <span class="param">self</span><span class="punct">.</span><span class="attr">location</span>    <span class="op">=</span> <span class="string">"Freiburg, Baden-Württemberg, Germany 🇩🇪"</span>
+        <span class="param">self</span><span class="punct">.</span><span class="attr">education</span>   <span class="op">=</span> <span class="string">"M.Sc. Microsystems Engineering — Uni Freiburg"</span>
+        <span class="param">self</span><span class="punct">.</span><span class="attr">open_to</span>    <span class="op">=</span> <span class="string">"New Opportunities 🚀"</span>
+
+    <span class="keyword">def</span> <span class="fn">describe</span><span class="punct">(</span><span class="param">self</span><span class="punct">):</span>
+        <span class="keyword">return</span> <span class="string">f"""
+        I've spent the last few years at Fraunhofer EMI and
+        Hahn-Schickard solving real engineering problems with
+        code, algorithms, and relentless curiosity.
+
+        From AI-driven material models → real-time web apps
+        → image processing systems for micro-fluidic analysis.
+
+        I chase the most interesting problem in the room.
+        """</span>
+
+    <span class="keyword">def</span> <span class="fn">languages</span><span class="punct">(</span><span class="param">self</span><span class="punct">):</span>
+        <span class="keyword">return</span> <span class="punct">[</span>
+            <!-- <span class="string">"Tamil"</span><span class="punct">,</span> --><span class="string">"German"</span><span class="punct">,</span>
+            <!-- <span class="string">"Malayalam"</span> <span class="comment"># Native or Bilingual</span><span class="punct">,</span> --><span class="string">"English"</span><span class="punct">,</span>
+            <span class="string">"Hindi"</span><span class="punct">,</span>
+        <span class="punct">]</span>
+
+
+<span class="comment"># ── Instantiate ──────────────────────────────────────────────</span>
+<span class="varname">me</span> <span class="op">=</span> <span class="classname">KrishanthMurali</span><span class="punct">()</span>
+<span class="fn">print</span><span class="punct">(</span><span class="varname">me</span><span class="punct">.</span><span class="fn">describe</span><span class="punct">())</span>
+</pre>
+
+          <div class="hero-cta">
+            <button class="cta-btn" onclick="switchTab('experience.json')">
+              <span class="btn-comment">// explore my work</span>
+              <span class="btn-code">experience<span class="btn-dot">.</span>json <span class="btn-arrow">→</span></span>
+            </button>
+            <button class="cta-btn secondary" onclick="switchTab('contact.sh')">
+              <span class="btn-comment">// get in touch</span>
+              <span class="btn-code">contact<span class="btn-dot">.</span>sh <span class="btn-arrow">→</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE.JSON -->
+      <div class="code-panel" id="panel-experience.json">
+        <div class="line-numbers" id="ln-exp"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">experience.json</span></div>
+          <pre class="code"><span class="punct">{</span>
+  <span class="json-key">"work_experience"</span><span class="punct">:</span> <span class="punct">[</span>
+
+<span class="punct">{</span>
+  <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Fraunhofer EMI"</span><span class="punct">,</span>
+  <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Master Thesis & Research Assistant"</span><span class="punct">,</span>
+  <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Dec 2024 – Mar 2026"</span><span class="punct">,</span>
+  <span class="json-key">"location"</span><span class="punct">:</span> <span class="string">"Freiburg, Germany"</span><span class="punct">,</span>
+  <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+    <span class="string">"AI-driven parametrization framework for the Johnson-Cook material model (strength + failure) for C45-N steel"</span><span class="punct">,</span>
+    <span class="string">"Evolutionary Algorithms automated parameter calibration — 90%+ reduction in manual effort"</span><span class="punct">,</span>
+    <span class="string">"Extended the optimization process into a practical desktop tool"</span><span class="punct">,</span>
+    <span class="string">"Built a user-friendly Tkinter GUI to run the parametrization pipeline"</span><span class="punct">,</span>
+    <span class="string">"Automated Linux workflows to streamline the full simulation + optimization process"</span>
+  <span class="punct">],</span>
+  <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Python"</span><span class="punct">,</span> <span class="string">"NumPy"</span><span class="punct">,</span> <span class="string">"SciPy"</span><span class="punct">,</span> <span class="string">"LS-Dyna"</span><span class="punct">,</span> <span class="string">"Tkinter"</span><span class="punct">,</span> <span class="string">"Linux"</span><span class="punct">]</span>
+<span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Fraunhofer EMI"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Research Assistant"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Nov 2023 – Nov 2024"</span><span class="punct">,</span>
+      <span class="json-key">"location"</span><span class="punct">:</span> <span class="string">"Freiburg, Germany"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Built a real-time geospatial web app (React + ArcGIS + MQTT) for live data monitoring"</span><span class="punct">,</span>
+        <span class="string">"Created a full-stack MySQL interface — cut data retrieval complexity by 70%"</span><span class="punct">,</span>
+        <span class="string">"Cross-functional collaboration for data staging and integration"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"React"</span><span class="punct">,</span> <span class="string">"ArcGIS Pro"</span><span class="punct">,</span> <span class="string">"MQTT"</span><span class="punct">,</span> <span class="string">"MySQL"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Hahn-Schickard"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Research Assistant"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"May 2023 – Oct 2024"</span><span class="punct">,</span>
+      <span class="json-key">"location"</span><span class="punct">:</span> <span class="string">"Freiburg, Germany"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Custom 2D image processing systems for micro-fluidic analysis"</span><span class="punct">,</span>
+        <span class="string">"Automated pressure detection — 85% accuracy improvement"</span><span class="punct">,</span>
+        <span class="string">"Digital Image Correlation + edge detection — 99% noise-free data"</span><span class="punct">,</span>
+        <span class="string">"PyQt GUI tool that halved analysis time"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Python"</span><span class="punct">,</span> <span class="string">"OpenCV"</span><span class="punct">,</span> <span class="string">"NumPy"</span><span class="punct">,</span> <span class="string">"SciPy"</span><span class="punct">,</span> <span class="string">"PyQt"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Capgemini Engineering"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Internship"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Jan 2022 – Apr 2022"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Full-stack e-commerce app, team of 6"</span><span class="punct">,</span>
+        <span class="string">"Owned the login system + account dashboard modules end-to-end"</span><span class="punct">,</span>
+        <span class="string">"Agile workflows, version control, enterprise dev practices"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Java"</span><span class="punct">,</span> <span class="string">"Spring Boot"</span><span class="punct">,</span> <span class="string">"MySQL"</span><span class="punct">,</span> <span class="string">"React.js"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"KCT's Platform for Research and Exploration"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Trainee"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Nov 2020 – Oct 2021"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Contributed to R&D initiatives on KCT's in-house innovation platform"</span><span class="punct">,</span>
+        <span class="string">"Supported project execution, documentation, cross-functional collaboration"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"R&D"</span><span class="punct">,</span> <span class="string">"Documentation"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Frendy"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Product Management & Development"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Jul 2021 – Sep 2021"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Designed and developed UIs with Vue.js + Vuetify to enhance product usability"</span><span class="punct">,</span>
+        <span class="string">"Managed project timelines, aligned technical work with business objectives"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Vue.js"</span><span class="punct">,</span> <span class="string">"Vuetify"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Kumaraguru Centre for Industrial Research and Innovation"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Intern"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Jul 2021 – Aug 2021"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Hands-on industrial research and innovation projects"</span><span class="punct">,</span>
+        <span class="string">"Applied engineering + research methodologies"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Applied Research"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Cisco"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Intern"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"May 2021 – Jul 2021"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Studied + applied core cybersecurity principles using Cisco Packet Tracer"</span><span class="punct">,</span>
+        <span class="string">"Designed a sustainable network prototype for secure campus infrastructure"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Cisco Packet Tracer"</span><span class="punct">,</span> <span class="string">"Networking"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Tutedude"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Intern"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Oct 2020 – Mar 2021"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Designed + delivered a full Python course, beginner to advanced"</span><span class="punct">,</span>
+        <span class="string">"Hands-on tutorials hosted on tutedude.com/python for students and professionals"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Python"</span><span class="punct">,</span> <span class="string">"Teaching"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"KCT Garage"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Team Member — Team Blitzkrieg"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Apr 2019 – May 2020"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Design, engineering + fabrication of an ATV for BAJA SAE 2020"</span><span class="punct">,</span>
+        <span class="string">"Documentation Leader — technical reports + design specs to competition standard"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"SolidWorks"</span><span class="punct">,</span> <span class="string">"Automotive Engineering"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"CAI Mahindra"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Intern"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Dec 2019"</span><span class="punct">,</span>
+      <span class="json-key">"location"</span><span class="punct">:</span> <span class="string">"Greater Coimbatore Area"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Automotive servicing + maintenance operations at a Mahindra dealership"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Diagnostics"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Ambal Auto"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Intern"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"Jun 2019"</span><span class="punct">,</span>
+      <span class="json-key">"location"</span><span class="punct">:</span> <span class="string">"Coonoor"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Vehicle maintenance, workshop operations, service processes"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Automotive Service"</span><span class="punct">]</span>
+    <span class="punct">},</span>
+
+    <span class="punct">{</span>
+      <span class="json-key">"company"</span><span class="punct">:</span>   <span class="string">"Royal Enfield"</span><span class="punct">,</span>
+      <span class="json-key">"role"</span><span class="punct">:</span>      <span class="string">"Intern"</span><span class="punct">,</span>
+      <span class="json-key">"period"</span><span class="punct">:</span>    <span class="string">"May 2019"</span><span class="punct">,</span>
+      <span class="json-key">"location"</span><span class="punct">:</span> <span class="string">"Tirupur"</span><span class="punct">,</span>
+      <span class="json-key">"highlights"</span><span class="punct">:</span> <span class="punct">[</span>
+        <span class="string">"Servicing + maintenance of Royal Enfield motorcycles"</span><span class="punct">,</span>
+        <span class="string">"Engine components, diagnostics, premium-brand service standards"</span>
+      <span class="punct">],</span>
+      <span class="json-key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="string">"Automotive Service"</span><span class="punct">]</span>
+    <span class="punct">}</span>
+
+  <span class="punct">]</span>
+<span class="punct">}</span></pre>
+        </div>
+      </div>
+
+      <!-- SKILLS.TS -->
+      <div class="code-panel" id="panel-skills.ts">
+        <div class="line-numbers" id="ln-skills"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">skills.ts</span></div>
+          <pre class="code"><span class="comment">// ============================================================</span>
+<span class="comment">// skills.ts — Technical Arsenal</span>
+<span class="comment">// ============================================================</span>
+
+<span class="keyword">interface</span> <span class="classname">SkillSet</span> <span class="punct">{</span>
+  <span class="attr">category</span><span class="punct">:</span> <span class="type">string</span><span class="punct">;</span>
+  <span class="attr">items</span><span class="punct">:</span>    <span class="type">string</span><span class="punct">[];</span>
+  <span class="attr">level</span><span class="punct">:</span>    <span class="string">"expert"</span> <span class="op">|</span> <span class="string">"proficient"</span> <span class="op">|</span> <span class="string">"familiar"</span><span class="punct">;</span>
+<span class="punct">}</span>
+
+<span class="keyword">const</span> <span class="varname">skills</span><span class="punct">:</span> <span class="classname">SkillSet</span><span class="punct">[]</span> <span class="op">=</span> <span class="punct">[</span>
+  <span class="punct">{</span>
+    <span class="attr">category</span><span class="punct">:</span> <span class="string">"AI / ML"</span><span class="punct">,</span>
+    <span class="attr">items</span><span class="punct">:</span> <span class="punct">[</span>
+      <span class="string">"Evolutionary Algorithms"</span><span class="punct">,</span> <span class="string">"Deep Learning"</span><span class="punct">,</span>
+      <span class="string">"Computer Vision"</span><span class="punct">,</span>        <span class="string">"Image Processing"</span><span class="punct">,</span>
+      <span class="string">"Parameter Optimization"</span><span class="punct">,</span>  <span class="string">"LLM APIs"</span><span class="punct">,</span>
+      <span class="string">"ML Algorithms"</span>
+    <span class="punct">],</span>
+    <span class="attr">level</span><span class="punct">:</span> <span class="string">"expert"</span>
+  <span class="punct">},</span>
+  <span class="punct">{</span>
+    <span class="attr">category</span><span class="punct">:</span> <span class="string">"Programming Languages"</span><span class="punct">,</span>
+    <span class="attr">items</span><span class="punct">:</span> <span class="punct">[</span>
+      <span class="string">"Python"</span><span class="punct">,</span>     <span class="string">"TypeScript"</span><span class="punct">,</span> <span class="string">"JavaScript"</span><span class="punct">,</span>
+      <span class="string">"Java"</span><span class="punct">,</span>       <span class="string">"C / C++"</span><span class="punct">,</span>    <span class="string">"SQL"</span><span class="punct">,</span>
+      <span class="string">"R"</span><span class="punct">,</span>          <span class="string">"Bash"</span>
+    <span class="punct">],</span>
+    <span class="attr">level</span><span class="punct">:</span> <span class="string">"expert"</span>
+  <span class="punct">},</span>
+  <span class="punct">{</span>
+    <span class="attr">category</span><span class="punct">:</span> <span class="string">"Python Ecosystem"</span><span class="punct">,</span>
+    <span class="attr">items</span><span class="punct">:</span> <span class="punct">[</span>
+      <span class="string">"NumPy"</span><span class="punct">,</span>      <span class="string">"SciPy"</span><span class="punct">,</span>   <span class="string">"Pandas"</span><span class="punct">,</span>
+      <span class="string">"OpenCV"</span><span class="punct">,</span>     <span class="string">"PyQt"</span><span class="punct">,</span>    <span class="string">"Tkinter"</span><span class="punct">,</span>
+      <span class="string">"Matplotlib"</span><span class="punct">,</span> <span class="string">"Seaborn"</span><span class="punct">,</span> <span class="string">"Selenium"</span><span class="punct">,</span>
+      <span class="string">"PyTorch"</span><span class="punct">,</span>    <span class="string">"TensorFlow"</span><span class="punct">,</span> <span class="string">"scikit-learn"</span>
+    <span class="punct">],</span>
+    <span class="attr">level</span><span class="punct">:</span> <span class="string">"expert"</span>
+  <span class="punct">},</span>
+  <span class="punct">{</span>
+    <span class="attr">category</span><span class="punct">:</span> <span class="string">"Web / Full-Stack"</span><span class="punct">,</span>
+    <span class="attr">items</span><span class="punct">:</span> <span class="punct">[</span>
+      <span class="string">"React"</span><span class="punct">,</span>     <span class="string">"Vue.js"</span><span class="punct">,</span>   <span class="string">"Node.js"</span><span class="punct">,</span>
+      <span class="string">"HTML5"</span><span class="punct">,</span>     <span class="string">"CSS"</span><span class="punct">,</span>      <span class="string">"Bootstrap"</span><span class="punct">,</span>
+      <span class="string">"MySQL"</span><span class="punct">,</span>    <span class="string">"REST APIs"</span><span class="punct">,</span> <span class="string">"ArcGIS"</span><span class="punct">,</span>
+      <span class="string">"MQTT"</span>
+    <span class="punct">],</span>
+    <span class="attr">level</span><span class="punct">:</span> <span class="string">"proficient"</span>
+  <span class="punct">},</span>
+  <span class="punct">{</span>
+    <span class="attr">category</span><span class="punct">:</span> <span class="string">"Simulation & CAD"</span><span class="punct">,</span>
+    <span class="attr">items</span><span class="punct">:</span> <span class="punct">[</span>
+      <span class="string">"LS-Dyna"</span><span class="punct">,</span>   <span class="string">"Ansys"</span><span class="punct">,</span>   <span class="string">"HyperMesh"</span><span class="punct">,</span>
+      <span class="string">"SolidWorks"</span><span class="punct">,</span><span class="string">"Inventor"</span><span class="punct">,</span><span class="string">"Fusion 360"</span>
+    <span class="punct">],</span>
+    <span class="attr">level</span><span class="punct">:</span> <span class="string">"proficient"</span>
+  <span class="punct">},</span>
+  <span class="punct">{</span>
+    <span class="attr">category</span><span class="punct">:</span> <span class="string">"DevOps & Tools"</span><span class="punct">,</span>
+    <span class="attr">items</span><span class="punct">:</span> <span class="punct">[</span>
+      <span class="string">"Git / GitLab CI"</span><span class="punct">,</span> <span class="string">"Docker"</span><span class="punct">,</span> <span class="string">"Linux"</span><span class="punct">,</span>
+      <span class="string">"Azure (AZ-900)"</span><span class="punct">,</span>   <span class="string">"Postman"</span>
+    <span class="punct">],</span>
+    <span class="attr">level</span><span class="punct">:</span> <span class="string">"proficient"</span>
+  <span class="punct">}</span>
+<span class="punct">];</span>
+
+<span class="keyword">export</span> <span class="keyword">default</span> <span class="varname">skills</span><span class="punct">;</span>
+</pre>
+
+          <div class="skills-visual">
+            <div class="skill-grid" id="skillGrid"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS.JSX -->
+      <div class="code-panel" id="panel-projects.jsx">
+        <div class="line-numbers" id="ln-proj"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">projects.jsx</span></div>
+          <pre class="code"><span class="comment">// ============================================================</span>
+<span class="comment">// projects.jsx — Things I've Actually Built</span>
+<span class="comment">// ============================================================</span>
+
+<span class="keyword">import</span> <span class="classname">React</span> <span class="keyword">from</span> <span class="string">'react'</span><span class="punct">;</span>
+
+<span class="keyword">const</span> <span class="varname">projects</span> <span class="op">=</span> <span class="punct">[</span> <span class="comment">/* see rendered cards below */</span> <span class="punct">];</span>
+
+<span class="keyword">export default function</span> <span class="fn">Projects</span><span class="punct">() {</span>
+  <span class="keyword">return</span> <span class="punct">(</span>
+    <span class="tag">&lt;ProjectGrid&gt;</span>
+      <span class="comment">/* Hover any card to inspect */</span>
+    <span class="tag">&lt;/ProjectGrid&gt;</span>
+  <span class="punct">);</span>
+<span class="punct">}</span>
+</pre>
+
+          <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+      </div>
+
+      <!-- EDUCATION.MD -->
+      <div class="code-panel" id="panel-education.md">
+        <div class="line-numbers" id="ln-edu"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">education.md</span></div>
+          <pre class="code"><span class="md-h1"># Education</span>
+
+<span class="md-h2">## M.Sc. Microsystems Engineering</span>
+<span class="md-bold">**Albert-Ludwigs-Universität Freiburg im Breisgau**</span>
+<span class="comment">2022 – 2025 · Freiburg im Breisgau, Germany</span>
+
+<span class="md-bullet">- Master Thesis: AI-driven parametrization of Johnson-Cook model for C45-N steel</span>
+<span class="md-bullet">- Publication: AI-driven parametrization for C45-N steel (under peer review)</span>
+
+---
+
+<span class="md-h2">## B.E. Automotive Engineering</span>
+<span class="md-bold">**Kumaraguru College of Technology**</span>
+<span class="comment">2018 – 2022 · Coimbatore, India</span>
+
+<span class="md-bullet">- Bachelor Thesis: Design and Analysis of Bumper with Alternate Materials</span>
+<span class="md-bullet">- Publication: Analysis of alternate material for bumpers using ULTEM and ABS</span>
+
+---
+
+<span class="md-h2">## Secondary Schooling</span>
+<span class="md-bold">**St. Joseph's Boys' Higher Secondary School**</span>
+<span class="comment">2004 – 2018</span>
+
+<span class="md-bullet">- Course: Mathematics, Physics, Chemistry, Computer Science</span>
+
+<!-- <span class="md-bullet">- See <span class="bc-active">certifications.yml</span> for certifications, <span class="bc-active">honors.toml</span> for honors &amp; awards, and <span class="bc-active">volunteering.md</span> for volunteer work</span></pre> -->
+          <div class="hero-cta">
+            <button class="cta-btn" onclick="switchTab('certifications.yml')">
+              <span class="btn-comment">// explore my certifications</span>
+              <span class="btn-code">certifications<span class="btn-dot">.</span>yml <span class="btn-arrow">→</span></span>
+            </button>
+            <button class="cta-btn secondary" onclick="switchTab('honors.toml')">
+              <span class="btn-comment">// check my honors</span>
+              <span class="btn-code">honors<span class="btn-dot">.</span>toml <span class="btn-arrow">→</span></span>
+            </button>
+          </div>
+</div>
+      </div>
+
+      <!-- CERTIFICATIONS.YML -->
+      <div class="code-panel" id="panel-certifications.yml">
+        <div class="line-numbers" id="ln-certs"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">certifications.yml</span></div>
+          <pre class="code"><span class="comment"># ============================================================</span>
+<span class="comment"># certifications.yml — Licenses & Certifications</span>
+<span class="comment"># ============================================================</span>
+
+<span class="json-key">certifications</span><span class="punct">:</span>
+  <span class="op">-</span> <span class="json-key">name</span><span class="punct">:</span> <span class="string">Deep Learning for Computer Vision</span> <span class="comment"> # NVIDIA</span>
+  <span class="op">-</span> <span class="json-key">name</span><span class="punct">:</span> <span class="string">Python for Data Science</span> <span class="comment"> # IBM</span>
+  <span class="op">-</span> <span class="json-key">name</span><span class="punct">:</span> <span class="string">Scrum Foundation Professional Certificate</span> <span class="comment"> # CERTIPROF</span>
+  <span class="op">-</span> <span class="json-key">name</span><span class="punct">:</span> <span class="string">AZ-900: Microsoft Azure Fundamentals</span> <span class="comment"> # MICROSOFT</span>
+  <span class="op">-</span> <span class="json-key">name</span><span class="punct">:</span> <span class="string">Data Analysis & Visualization with Python</span> <span class="comment"> # IBM</span></pre>
+          <div class="skills-visual">
+            <div class="skill-tags" style="margin-top:8px;">
+              <span class="skill-tag">Deep Learning for Computer Vision</span> 
+              <span class="skill-tag">Python for Data Science</span> 
+              <span class="skill-tag">Scrum Foundation Professional Certificate</span> 
+              <span class="skill-tag">AZ-900: Microsoft Azure Fundamentals</span> 
+              <span class="skill-tag">Data Analysis & Visualization with Python</span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HONORS.TOML -->
+      <div class="code-panel" id="panel-honors.toml">
+        <div class="line-numbers" id="ln-honors"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">honors.toml</span></div>
+          <pre class="code"><span class="comment"># ============================================================</span>
+<span class="comment"># honors.toml — Honors & Awards</span>
+<span class="comment"># ============================================================</span>
+
+<span class="punct">[[</span><span class="json-key">honors</span><span class="punct">]]</span>
+<span class="attr">title</span> <span class="op">=</span> <span class="string">"Best Outstanding Student Award"</span>
+<span class="attr">year</span>  <span class="op">=</span> <span class="number">2022</span>
+
+<span class="punct">[[</span><span class="json-key">honors</span><span class="punct">]]</span>
+<span class="attr">title</span> <span class="op">=</span> <span class="string">"Mahatma Gandhi Scholarship Award"</span>
+<span class="attr">year</span>  <span class="op">=</span> <span class="number">2018 - 2022</span>
+
+<span class="punct">[[</span><span class="json-key">honors</span><span class="punct">]]</span>
+<span class="attr">title</span> <span class="op">=</span> <span class="string">"Best Paper Presenter Award"</span>
+<span class="attr">year</span>  <span class="op">=</span> <span class="number">2021</span>
+
+<span class="punct">[[</span><span class="json-key">honors</span><span class="punct">]]</span>
+<span class="attr">title</span> <span class="op">=</span> <span class="string">"Galactic Problem Solver"</span>
+<span class="attr">year</span>  <span class="op">=</span> <span class="number">2021</span>
+
+<span class="punct">[[</span><span class="json-key">honors</span><span class="punct">]]</span>
+<span class="attr">title</span> <span class="op">=</span> <span class="string">"Guinness World Record Participant"</span>
+<span class="attr">year</span>  <span class="op">=</span> <span class="number">2021</span></pre>
+        </div>
+      </div>
+
+      <!-- VOLUNTEERING.MD -->
+      <div class="code-panel" id="panel-volunteering.md">
+        <div class="line-numbers" id="ln-volunteer"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">volunteering.md</span></div>
+          <pre class="code"><span class="md-h1"># Volunteering</span>
+
+<span class="md-h2">## German Society for Materials Science (DGM)</span>
+<span class="md-bold">**Member**</span>
+<span class="comment">May 2024 – Apr 2025 · 1 yr</span>
+
+<span class="md-h2">## Albert-Ludwigs-Universität Freiburg im Breisgau</span>
+<span class="md-bold">**ICM (Intercultural Mentoring) Mentor**</span>
+<span class="comment">Oct 2023 – Sep 2024 · 1 yr</span>
+<span class="md-bullet">- Fostered cross-cultural understanding and personal growth among students</span>
+
+<span class="md-h2">## SAEINDIA</span>
+<span class="md-bold">**Student Executive**</span>
+<span class="comment">Nov 2020 – Oct 2021 · 1 yr</span>
+<span class="md-bullet">- Part of the Student Executive Council, organized events &amp; workshops</span>
+<span class="md-bullet">- Presented a paper on traffic congestion at Autosparx-2021 (SAE &amp; ARAI)</span>
+
+<span class="md-h2">## Security Industry Association (SIA)</span>
+<span class="md-bold">**Academic Member**</span>
+<span class="comment">Aug 2020 – Present · 5 yrs 11 mos</span>
+<span class="md-bullet">- Shared insights on cybersecurity, online threats &amp; vulnerabilities</span>
+
+<span class="md-h2">## All India Council For Technical Skill Development</span>
+<span class="md-bold">**Member**</span>
+<span class="comment">Jul 2020 – Present · 6 yrs</span>
+
+<span class="md-h2">## International Society of Automation (ISA)</span>
+<span class="md-bold">**Student Member**</span>
+<span class="comment">Jul 2020 – Jun 2021 · 1 yr</span>
+
+<span class="md-h2">## Kumaraguru College of Technology</span>
+<span class="md-bold">**Joint Secretary**</span>
+<span class="comment">Aug 2019 – Sep 2020 · 1 yr 2 mos</span>
+<span class="md-bullet">- Department Association of Automobile Engineering — events &amp; workshops</span>
+
+<span class="md-h2">## Space &amp; Satellite Professionals International</span>
+<span class="md-bold">**Student Member**</span>
+<span class="comment">Jun 2020 – Present · 6 yrs 1 mo</span>
+
+<span class="md-h2">## Indian Development Foundation</span>
+<span class="md-bold">**Fundraising Volunteer**</span>
+<span class="comment">Jun 2017 – Jun 2018 · 1 yr 1 mo</span>
+<span class="md-bullet">- Raised funds for people &amp; children unable to afford aid</span>
+
+<span class="md-h2">## National Human Rights Commission of India</span>
+<span class="md-bold">**Student Volunteer**</span>
+<span class="comment">Jul 2020 · 1 mo</span>
+<span class="md-bullet">- Promotion &amp; protection of human rights against discrimination</span>
+
+<span class="md-h2">## Kumaraguru College of Technology</span>
+<span class="md-bold">**SAE Co-ordinator**</span>
+<span class="comment">Aug 2020 – Oct 2021 · 1 yr 3 mos</span>
+<span class="md-bullet">- Organized events &amp; workshops in the automotive domain</span></pre>
+        </div>
+      </div>
+
+      <!-- CONTACT.SH -->
+      <div class="code-panel" id="panel-contact.sh">
+        <div class="line-numbers" id="ln-contact"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">contact.sh</span></div>
+          <pre class="code"><span class="sh-shebang">#!/bin/bash</span>
+<span class="comment"># ============================================================</span>
+<span class="comment"># contact.sh — Let's build something together</span>
+<span class="comment"># ============================================================</span>
+
+<span class="keyword">echo</span> <span class="string">"Initializing contact protocols..."</span>
+<span class="keyword">echo</span>
+
+<span class="varname">NAME</span><span class="op">=</span><span class="string">"Krishanth Murali"</span>
+<span class="varname">LOCATION</span><span class="op">=</span><span class="string">"Freiburg, Baden-Württemberg, Germany"</span>
+<span class="varname">OPEN_TO</span><span class="op">=</span><span class="string">"Full-time roles, Research positions, Collaborations"</span>
+
+<span class="keyword">function</span> <span class="fn">reach_out</span><span class="punct">() {</span>
+  <span class="keyword">echo</span> <span class="string">"→ All contact links live in the Accounts panel (bottom-left avatar)"</span>
+<span class="punct">}</span>
+
+<span class="fn">reach_out</span>
+</pre>
+          <div class="hero-cta">
+            <button class="cta-btn" onclick="toggleAccounts()">
+              <span class="btn-comment">// see all accounts</span>
+              <span class="btn-code">open<span class="btn-dot">.</span>accounts <span class="btn-arrow">→</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUBLICATIONS.BIB -->
+      <div class="code-panel" id="panel-publications.bib">
+        <div class="line-numbers" id="ln-pub"></div>
+        <div class="code-area">
+          <div class="breadcrumb">krishanth-murali > <span class="bc-active">publications.bib</span></div>
+          <pre class="code"><span class="comment">% ============================================================</span>
+<span class="comment">% publications.bib — Research Publications</span>
+<span class="comment">% ============================================================</span>
+
+<span class="bib-type">@inproceedings</span><span class="punct">{</span><span class="bib-key">murali2023bumpers</span><span class="punct">,</span>
+  <span class="bib-field">author</span>    <span class="op">=</span> <span class="punct">{</span><span class="string">Murali, Krishanth and others</span><span class="punct">},</span>
+  <span class="bib-field">title</span>     <span class="op">=</span> <span class="punct">{</span><span class="string">Analysis of alternate material for bumpers
+              using ULTEM and ABS</span><span class="punct">},</span>
+  <span class="bib-field">booktitle</span> <span class="op">=</span> <span class="punct">{</span><span class="string">AIP Conference Proceedings</span><span class="punct">},</span>
+  <span class="bib-field">year</span>      <span class="op">=</span> <span class="punct">{</span><span class="number">2023</span><span class="punct">},</span>
+  <span class="bib-field">conference</span><span class="op">=</span> <span class="punct">{</span><span class="string">ICMDM '22</span><span class="punct">},</span>
+  <span class="bib-field">status</span>    <span class="op">=</span> <span class="punct">{</span><span class="string">Published</span><span class="punct">},</span>
+  <span class="bib-field">note</span>      <span class="op">=</span> <span class="punct">{</span><span class="string">Comparative FEA study on sustainable polymer
+              alternatives for automotive bumpers</span><span class="punct">}</span>
+<span class="punct">}</span>
+
+<span class="bib-type">@article</span><span class="punct">{</span><span class="bib-key">murali2025jcmodel</span><span class="punct">,</span>
+  <span class="bib-field">author</span>    <span class="op">=</span> <span class="punct">{</span><span class="string">Murali, Krishanth and others</span><span class="punct">},</span>
+  <span class="bib-field">title</span>     <span class="op">=</span> <span class="punct">{</span><span class="string">AI-driven parametrization of a material model
+              for C45-N steel under a wide range of
+              strain rates</span><span class="punct">},</span>
+  <span class="bib-field">journal</span>   <span class="op">=</span> <span class="punct">{</span><span class="string">Under Peer Review</span><span class="punct">},</span>
+  <span class="bib-field">year</span>      <span class="op">=</span> <span class="punct">{</span><span class="number">2025</span><span class="punct">},</span>
+  <span class="bib-field">status</span>    <span class="op">=</span> <span class="punct">{</span><span class="string">Under Peer Review</span><span class="punct">},</span>
+  <span class="bib-field">note</span>      <span class="op">=</span> <span class="punct">{</span><span class="string">Johnson-Cook model calibration using Evolutionary
+              Algorithms. 90%+ reduction in manual effort.
+              Master Thesis @ Fraunhofer EMI</span><span class="punct">}</span>
+<span class="punct">}</span></pre>
+        </div>
+      </div>
+
+      <!-- TERMINAL PANEL -->
+      <div class="code-panel" id="panel-terminal">
+        <div class="terminal-area">
+          <div class="terminal-header">
+            <span class="term-tab active">TERMINAL</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="term-line"><span class="term-prompt">krishanth@portfolio</span><span class="term-sep">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">whoami</span></div>
+            <div class="term-output">Krishanth Murali — Engineer, Researcher, Builder</div>
+            <div class="term-line"><span class="term-prompt">krishanth@portfolio</span><span class="term-sep">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">cat skills.txt | grep "level:expert"</span></div>
+            <div class="term-output">Python, AI/ML, Computer Vision, Image Processing,<br>Algorithm Development, Full-Stack, Data Analysis</div>
+            <div class="term-line"><span class="term-prompt">krishanth@portfolio</span><span class="term-sep">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">ls experience/</span></div>
+            <div class="term-output">fraunhofer_emi_thesis.log  fraunhofer_emi_webgis.log  hahn_schickard_cv.log  capgemini.log</div>
+            <div class="term-line"><span class="term-prompt">krishanth@portfolio</span><span class="term-sep">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">git log --oneline --graph</span></div>
+            <div class="term-output term-git">
+              * <span class="git-sha">a3f9e2c</span> <span class="git-head">(HEAD -> main)</span> AI parametrization GUI — production ready<br>
+              * <span class="git-sha">8b12d4f</span> Real-time ArcGIS webapp — stakeholder approved<br>
+              * <span class="git-sha">2d7c901</span> OpenCV pipeline — 99% noise-free results<br>
+              * <span class="git-sha">e5a3b88</span> MSc Microsystems Engineering — completed<br>
+              * <span class="git-sha">f1c29d3</span> Full-stack e-commerce — Capgemini internship<br>
+              * <span class="git-sha">3a8e7b2</span> BE Automotive Engineering — graduated
+            </div>
+            <div class="term-line"><span class="term-prompt">krishanth@portfolio</span><span class="term-sep">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">echo "future-ready 🚀"</span></div>
+            <div class="term-output term-highlight">Developing future-ready products 🚀</div>
+            <div class="term-line blink-line"><span class="term-prompt">krishanth@portfolio</span><span class="term-sep">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="cursor-blink">▌</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WELCOME PANEL (shown when all tabs are closed) -->
+      <div class="code-panel welcome-panel" id="panel-welcome">
+        <div class="welcome-content">
+          <div class="welcome-avatar">
+            <img src="photo.png" alt="Krishanth Murali" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+          </div>
+          <h1 class="welcome-name">Krishanth Murali</h1>
+          <p class="welcome-subtitle">Researcher &amp; Developer | Digitalization &amp; Algorithm Development</p>
+          <p class="welcome-location">📍 Freiburg, Baden-Württemberg, Germany</p>
+          <a href="https://linkedin.com/in/krishanth-murali" target="_blank" class="welcome-linkedin">🔗 Connect on LinkedIn</a>
+
+          <div class="welcome-commands">
+            <div class="welcome-cmd" onclick="switchTab('about.py')">
+              <span class="cmd-icon">🐍</span>
+              <span class="cmd-label">Open Profile</span>
+              <span class="cmd-key">about.py</span>
+            </div>
+            <div class="welcome-cmd" onclick="switchTab('experience.json')">
+              <span class="cmd-icon">{ }</span>
+              <span class="cmd-label">Open Experience</span>
+              <span class="cmd-key">experience.json</span>
+            </div>
+            <!-- <div class="welcome-cmd" onclick="toggleAccounts()">
+              <span class="cmd-icon">👤</span>
+              <span class="cmd-label">Open Accounts</span>
+              <span class="cmd-key">contact links</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /editor-content -->
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <div class="status-left">
+        <span class="status-item status-git">⎇ main</span>
+        <span class="status-item">✓ 0 errors</span>
+        <span class="status-item">⚠ 0 warnings</span>
+      </div>
+      <div class="status-right">
+        <span class="status-item" id="statusFile">Python</span>
+        <span class="status-item">UTF-8</span>
+        <span class="status-item">Ln 1, Col 1</span>
+        <span class="status-item status-live">● Follow & Connect</span>
+      </div>
+    </div>
+    
+    <!-- STATUS BAR
+    <div class="status-bar">
+      <div class="status-left">
+        <span class="status-item status-git">⎇ main</span>
+        <span class="status-item">✓ 0 errors</span>
+        <span class="status-item">⚠ 0 warnings</span>
+      </div>
+      <div class="status-right">
+        <span class="status-item" id="statusFile">Python</span>
+        <span class="status-item">UTF-8</span>
+        <span class="status-item">Ln 1, Col 1</span>
+        <span class="status-item status-live">● Follow & Connect</span>
+      </div>
+    </div> -->
+
+  </div><!-- /editor-area -->
+</div><!-- /editor-layout -->
+
+<script src="main.js"></script>
+</body>
+</html>
